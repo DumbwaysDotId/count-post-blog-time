@@ -2,9 +2,10 @@
 
 Add below code to file `blog.js`
 
-1.  Add data mont with array for get month name
+1.  Add data month with array for get month name
 
     ```javascript
+    ...
     const month = [
       'January',
       'February',
@@ -19,11 +20,13 @@ Add below code to file `blog.js`
       'November',
       'December',
     ];
+    ...
     ```
 
 2.  Make function `getFullTime`
 
     ```javascript
+    ...
     function getFullTime(time) {
       const date = time.getDate();
       const monthIndex = time.getMonth();
@@ -34,11 +37,13 @@ Add below code to file `blog.js`
 
       return `${date} ${month[monthIndex]} ${year} ${hours}:${minutes} WIB`;
     }
+    ...
     ```
 
 3.  Make function `getDistanceTime`
 
     ```javascript
+    ...
     function getDistanceTime(time) {
       const distance = new Date() - new Date(time);
 
@@ -63,6 +68,7 @@ Add below code to file `blog.js`
         }
       }
     }
+    ...
     ```
 
 4.  After create function `getDistanceTime` add this code to function `renderBlog` in
